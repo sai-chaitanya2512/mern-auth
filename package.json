@@ -1,0 +1,26 @@
+{
+  "name": "mernauth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon api/index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sai-chaitanya2512/mern-auth.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sai-chaitanya2512/mern-auth/issues"
+  },
+  "homepage": "https://github.com/sai-chaitanya2512/mern-auth#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "nodemon": "^3.1.2"
+  }
+}

@@ -6,17 +6,21 @@ import AboutMe from './pages/AboutMe'
 import Contact from './pages/Contact'
 import Profile from './pages/Profile'
 import Home from './pages/Home'
+import Header from './Components/Header'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home />} />
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
-        <Route path='/aboutme' element={<AboutMe />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/profile' element={<Profile />} />
+        <div>
+          <Header />
+          <Route path='/' element={<Home />} />
+          <Route path='/aboutme' element={<AboutMe />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/profile' element={<Profile />} />
+        </div>
       </Routes>
     </BrowserRouter>
   )
